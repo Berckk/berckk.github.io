@@ -1,0 +1,37 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Berckk
+tagline:             Berckk
+url:                 http://berckk.github.io
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Khodakov Pavel
+  url:               http://berckk.github.io
+  email:             berckk@gmail.com
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/Berckk/berckk.github.io
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+pages_list:
+  О блоге: '/about'
+  Архив записей: '/archive'
+  Лента: '/atom.xml'
