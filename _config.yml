@@ -23,7 +23,7 @@ author:
 
 # Custom vars
 version:             2.0.0
-github:
+github:              https://github.com/Berckk
   repo:              https://github.com/Berckk/berckk.github.io
 
 # Gems
