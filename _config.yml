@@ -2,11 +2,15 @@
 permalink:           pretty
 
 # Setup
-title:               Berckk
-tagline:             Berckk
+title:               Записки
+tagline:             Записки на память
 url:                 http://berckk.github.io
-paginate:            1
-baseurl:             ""
+baseurl:             "/"
+paginate:         10
+paginate_path:    "page:num"
+highlighter:      rouge
+future:           false
+show_drafts:      false
 
 # Assets
 #
@@ -27,7 +31,7 @@ github:
   repo:              https://github.com/Berckk/berckk.github.io
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
 
