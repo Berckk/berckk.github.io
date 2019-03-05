@@ -1,0 +1,1 @@
+`sudo fuser -vki /var/lib/dpkg/lock`
