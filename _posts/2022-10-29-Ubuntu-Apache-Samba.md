@@ -4,15 +4,15 @@
 
 Итак окружение:
  * Сервер NAS (Windows) 
- ** Папка доступная по сети <files_for_site>
- *** В папке в корне лижит обязательный пустой файл <ok> по нему определяется удачность монтирования. 
+    * Папка доступная по сети `files_for_site`
+      * В папке в корне лижит обязательный пустой файл `ok` по нему определяется удачность монтирования. 
  * Сервер SITE (Ubuntu)
- ** Wordpress и Apache в докере.
+    * Wordpress и Apache в докере.
 
 
 
 ## Wordpress 
-Рабочий каталог размещен по пути </website/wordpress/>
+Рабочий каталог размещен по пути `/website/wordpress/`
 
 docker-compose:
 ```
@@ -59,18 +59,21 @@ docker-compose:
 
 ## Apache
 
-В Apache2.conf добавлены следующие строки:
+В `Apache2.conf` добавлены следующие строки:
 ```
  <Directory "/var/www/html/wp-content/uploads/files">
    EnableSendfile On
  </Directory>
 ```
 Здесь путь указан для окружения внутри докер контейнера.
-Соответственно Apche2.conf пробрасывается вовнутрь
+Соответственно `Apche2.conf` пробрасывается вовнутрь
 
-Для того чтобы укоротить ссылку на сайте в Apache2.conf 
+Для того чтобы укоротить ссылку на сайте в `Apache2.conf` 
 внесена следующая строка:
-< Alias "/files" "/var/www/html/wp-content/uploads/files">
+```
+Alias "/files" "/var/www/html/wp-content/uploads/files"
+```
+Теперь фалы из расшаренного каталога открываются по ссылке `https://site.ru/files/FAIL.jpg`
 
 ## .htaccess
 Еще один обязательный файл в корне расшаренного каталога:
