@@ -1,7 +1,7 @@
 # Wordpress в docker и проброс samba
  
 
-
+```
   version: '3'
 
   services:
@@ -17,9 +17,9 @@
       restart: always
       environment:
         TZ: "Europe/Moscow"
+```
 
-
-
+```
   #!/bin/bash
   if [ -f /website/wordpress/data/wp-app/wp-content/uploads/files/ok ]
   then
@@ -38,15 +38,17 @@
         echo "Сервер недоступен"
      fi
   fi
+```
 
-
-
+```
   <Directory "/var/www/html/wp-content/uploads/files">
     EnableSendfile On
   </Directory>
+```
 
+```
   Alias "/files" "/var/www/html/wp-content/uploads/files"
-
+```
 
 
 
