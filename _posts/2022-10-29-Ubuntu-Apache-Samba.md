@@ -4,15 +4,26 @@
 
 Итак окружение:
  * Сервер NAS (Windows) 
+<<<<<<< HEAD:_posts/2022-10-29-Ubuntu-Apache-Samba.md
     * Папка доступная по сети `files_for_site`
       * В папке в корне лижит обязательный пустой файл `ok` по нему определяется удачность монтирования. 
  * Сервер SITE (Ubuntu)
     * Wordpress и Apache в докере.
+=======
+  ** Папка доступная по сети >files_for_site
+   *** В папке в корне лижит обязательный пустой файл <ok> по нему определяется удачность монтирования. 
+ * Сервер SITE (Ubuntu)
+  ** Wordpress и Apache в докере.
+>>>>>>> 077dbc0cefcfb291fde65732d46e19fe01955df3:_posts/2022-10-29 Ubuntu-Apache-Samba.md
 
 
 
 ## Wordpress 
+<<<<<<< HEAD:_posts/2022-10-29-Ubuntu-Apache-Samba.md
 Рабочий каталог размещен по пути `/website/wordpress/`
+=======
+Рабочий каталог размещен по пути >/website/wordpress/
+>>>>>>> 077dbc0cefcfb291fde65732d46e19fe01955df3:_posts/2022-10-29 Ubuntu-Apache-Samba.md
 
 docker-compose:
 ```
