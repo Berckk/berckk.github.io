@@ -8,21 +8,25 @@ tags: ubuntu 18.04
 ---
 
 Удаляем слежку
-`sudo apt purge popularity-contest -y`
-
+```
+sudo apt purge popularity-contest -y
+```
 Правим параметры ядра.
-`sudo -e /etc/default/grub`
-
+```
+sudo -e /etc/default/grub
+```
 Для отключения патчей и для ускорения работы
-
-`GRUB_CMDLINE_LINUX="nopti nospectre_v1 nospectre_v2 nospec_store_bypass_disable noibrs noibpb l1tf=off no_stf_barrier"`
-
+```
+GRUB_CMDLINE_LINUX="nopti nospectre_v1 nospectre_v2 nospec_store_bypass_disable noibrs noibpb l1tf=off no_stf_barrier"
+```
 Удаляем snap. Считаю, что на сервере это лишнее.
-`sudo apt purge snapd -y `
-
-Обновляемся 
-`sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y`
-
+```
+sudo apt purge snapd -y 
+```
+Обновляемся
+```
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+```
 # Добавляем модули в загрузку для работы в виртуальной среде Hyper-v.
 Для чего, в конец фала "modules" 
 `sudo -e /etc/initramfs-tools/modules`
