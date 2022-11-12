@@ -1,5 +1,13 @@
-# Wordpress в docker и проброс samba
+---
+layout: post
+title: Проброс samba в docker с wordpress.
+permalink: wordpress-samba-docker/
+tags: ubuntu wordpress samba docker apache htaccess
+---
+Wordpress и Apache в docker, проброс samba папки на сайт и настройка htaccess.
+---
 Поступила задача пробросить на корпоративный сайт папку расшаренную в локальной сети.
+
 Итак окружение:
  * Сервер NAS (Windows) 
     * Папка доступная по сети `files_for_site`
