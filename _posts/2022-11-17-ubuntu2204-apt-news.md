@@ -1,7 +1,7 @@
 ---
 layout: post
 title: В Ubuntu 22.04 при обновлении предлагает новости.
-permalink: Journalctl/
+permalink: Ubuntu_News/
 tags: ubuntu 22.04 apt news
 ---
 Ubuntu 22.04 APT News
