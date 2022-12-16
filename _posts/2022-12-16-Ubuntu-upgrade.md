@@ -19,7 +19,7 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-apt update && apt upgrade -y && apt autoremove -y
+apt update && apt dist-upgrade -y && apt autoremove -y
 # Обновление Clamav неофициальных репозитариев.
 #clamav-unofficial-sigs.sh --upgrade && clamav-unofficial-sigs.sh --force
 
