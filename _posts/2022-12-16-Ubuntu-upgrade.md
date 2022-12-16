@@ -20,7 +20,8 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 apt update && apt upgrade -y && apt autoremove -y
-clamav-unofficial-sigs.sh --upgrade && clamav-unofficial-sigs.sh --force
+# Обновление Clamav неофициальных репозитариев.
+#clamav-unofficial-sigs.sh --upgrade && clamav-unofficial-sigs.sh --force
 
 if [ -f /var/run/reboot-required ]; then
     echo "A reboot is required." >&2
