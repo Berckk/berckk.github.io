@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Исправляем: ""Key is stored in legacy trusted.gpg keyring""
+title: Исправляем "Key is stored in legacy trusted.gpg keyring"
 permalink: legacy-trusted-keyring/
-tags: ubuntu trusted.gpg
+tags: ubuntu trusted.gpg apt-key
 ---
 Исправляем: "Key is stored in legacy trusted.gpg keyring"
 ---
 
-## Переносим ключи в /etc/apt/keyrings
+## Для исправления переносим ключи в /etc/apt/keyrings
 `sudo apt-key list`  
 Берем последнии последнии 8 знаков из ключа, находящегося в `trusted.gpg` и по ним переносим ключ в отдельный файл в `/etc/apt/keyrings/`  
 `sudo apt-key export ХХХХХХХХ | sudo gpg --dearmour -o /etc/apt/keyrings/Отдельный_репозитарий.gpg`  
