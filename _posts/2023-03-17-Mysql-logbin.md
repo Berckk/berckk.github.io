@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Удаление файлов binlog от mysql.
+title: Отключение файлов binlog от mysql.
 permalink: Mysql-binlog/
 tags: mysql binlog wordpress
 ---
-Удаление файлов bilog.000* созданных mysql.
+Отключение и удаление файлов bilog.000* созданных mysql.
 ---
 
  Есть два наиболее важных сценария использования binlog.
@@ -26,3 +26,4 @@ tags: mysql binlog wordpress
 [mysqld]
 skip-log-bin
 ```
+
