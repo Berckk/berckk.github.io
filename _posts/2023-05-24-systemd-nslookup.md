@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Исправляем "127.0.0.53 server can't find"
-permalink: legacy-trusted-keyring/
+permalink: nslookup_resolv/
 tags: ubuntu nslookup resolv
 ---
 $ nslookup domen.local
